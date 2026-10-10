@@ -22,3 +22,161 @@ An HTML attribute is extra information we can add to a tag to identify, classify
 syntax:
     <element attribute_name=attribute_value another_attribute_name=another_attribute_value></element>
 
+Tag nesting
+We nest an HTML tag inside of another tag, we indent the inner tag so that the overall tag hierarchy is clear. It makes your code easier to read and maintain.
+
+Tag attributes
+An HTML attribute is extra information we can add to a tag to identify, classify, style or modify the default behavior of the element the tag contains.
+syntax:
+<element attribute_name=attribute_value another_attribute_name=another_attribute_value></element>
+
+Uses of HTML attributes
+Most common is element: 
+identification (id attribute)- The id attribute is used to uniquely identify an element within the whole document.
+classification (class attribute)- The class attribute is used to group together similar elements.
+
+Both <id> and <class> attributes are often used for styling purposes since they allow us to find a specific element or style similar elements with a single style declaration.
+
+Other attributes are — for example, an <a> tag, which links a piece of text to another location on our own web page or another web page  uses the href attribute to tell the HTML tag where the destination of the linked text should be. 
+
+
+HTML Elements
+<ul> and <ol>
+When we want to present a list of items in a clear, readable format, we turn to the unordered <ul> and ordered lists <ol> elements.
+
+syntax
+Elements	example syntax	output
+<ul>	<ul>
+
+  <li>One item</li>
+
+  <li>Another item</li>
+
+</ul>	. one item
+. another item
+<ol>	<ol>
+
+  <li>First item</li>
+
+  <li>Second item</li>
+
+</ol>	1. First item
+2. Second item
+<dl> 
+Definition list	<dl>
+
+  <dt>First term</dt>
+
+  <dd>Term definition</dd>
+
+</dl>	First term
+   Term definition
+
+
+
+<img>
+Used to include an image in our page. 
+Example with attributes
+
+<img
+
+  src="https://via.placeholder.com/800x600.png"
+
+  alt="Alternative Text"
+
+  title="Display Title"
+
+  width="800"
+
+  height="600"
+
+/>
+
+img attributes
+alt- attribute provides descriptive text the browser can display if it can't find the image file. 
+title- text to give the user more information about the image. 
+width and height- attributes define the size of the image that shows up in the browser.
+
+
+<a>
+Used for adding links to other pages, sections, or websites to your page.
+we can wrap other elements inside of them
+example: 
+To add a link to an image
+  <a href="http://example.com/">
+  	<img src="https://via.placeholder.com/800x600.png" alt="Alternative Text" />
+</a>
+
+2. To add a link that will direct to an email address:
+<a href="mailto:webmaster@example.com">Send an email</a>
+
+3. To link to a specific location on the same webpage
+   We can then target an element that we identified or classified earlier.
+<p id="tips">Useful Tips Section</p>
+<a href="#tips">Jump to the Useful Tips Section</a>
+
+Relative and Absolute Links
+When considering what location links point to, you will choose between relative or absolute links. 
+A relative link directs to content within the same website.
+
+ <a href="about.html">This is a relative URL link</a> 
+
+An absolute link, on the other hand, links to external content and requires a fully defined URL path.
+
+<a href="http://example.com/">This is an absolute URL link</a>
+
+
+HTML Validation
+HTML can contain all kinds of different errors ranging from missing angle brackets to wrong or missing opening or closing tags, unnecessary or missing attributes, and many other issues. 
+
+Our web browsers are pretty good at filling in the missing pieces but we can't always count on it being the same experience with everyone. 
+Tools like <W3C's HTML Validator> can catch these errors and prevent our user from having a poor experience.
+
+Elements and description
+<div>- Defines a division or a section in your page. Used as a container for other elements.		
+<div> ... </div>
+<span>- Defines a section in a document, used for styling inline elements.	<span> ... </span>
+<table>- Defines a table.		
+<table> ... </table>
+<tr>- Defines a row in a table.	<tr> ... </tr>
+<td>- Defines a cell in a table.		
+<td> ... </td>
+<th>- Defines a header cell in a table.		
+<th> ... </th>
+<form>- Defines an HTML form for user input.		
+<form> ... </form>
+<input>- Defines an input control.	<input type="text">
+<button>- Defines a clickable button.	<button> ... </button>
+
+
+
+Process of Creating HTML Documents
+Below is a 5-step general process guideline for how to approach creating an HTML document
+
+Planning and content gathering
+1. Define the purpose and target audience for your webpage.
+Gather the text content, images, and other media you want to include.
+Sketch out a basic layout or structure for your webpage to visualize its organization.
+
+2. Setting up the document foundation
+Open a text editor and create a new file.
+Save the file with a descriptive name and the .html extension.
+Write the basic HTML structure including the DOCTYPE declaration, <html> tag, <head> section with meta information (title, character encoding), and the <body> section where your webpage content will reside.
+
+3. Building the page structure with HTML tags
+Within the <body> section, start adding HTML tags to define the structure and content of your webpage.
+Use heading tags (<h1> to <h6>) for titles, paragraph tags (<p>) for text content, and other tags for images (<img>), lists (<ul> or <ol>), and links (<a>).
+Organize the tags logically to create a clear hierarchy and user flow for your webpage.
+
+4. Adding visual style and interactivity (optional)
+While HTML defines structure, it doesn't control visual style. For that, you'd typically use CSS (Cascading Style Sheets) alongside HTML.
+You can also introduce basic styling within the HTML using the style attribute on specific tags for a quick visual touch.
+Consider including interactive elements like forms (<form>) to capture user input if needed for your webpage's functionality.
+
+5. Testing and refinement
+Save your HTML file regularly.
+Open the file in a web browser to preview your webpage and identify any errors or layout issues.
+Make adjustments to your HTML code.
+
+-- Use semantic tags helps improve the accessibility, readability, and SEO (Search Engine Optimization) of a webpage. 
+-- Understand that a well-structured HTML document ensures proper interpretation by web browsers and a good user experience
