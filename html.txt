@@ -1,0 +1,15 @@
+HTML Hyper (Text Mark-up Language)
+-Define the layout and presentation of text images links and other media
+
+Text Formating
+- Add customization to content we wish to display.
+# <H1> to <H6> headigs
+# <P> defines text block
+# <strong> defines important text (bold)
+# <em> emphsizes text (italic)
+
+Semantic html
+- convey the meaning and tructure of the content being desplayed
+- they improve accessibilty readability and SEO (search engine optimization)
+
+#<header>, <nav>, <section>, <article>, <main>, <aside>, <footer>
