@@ -13,3 +13,12 @@ Semantic html
 - they improve accessibilty readability and SEO (search engine optimization)
 
 #<header>, <nav>, <section>, <article>, <main>, <aside>, <footer>
+
+Tag nesting
+We nest an HTML tag inside of another tag, we indent the inner tag so that the overall tag hierarchy is clear. It makes your code easier to read and maintain.
+
+Tag attributes
+An HTML attribute is extra information we can add to a tag to identify, classify, style or modify the default behavior of the element the tag contains.
+syntax:
+    <element attribute_name=attribute_value another_attribute_name=another_attribute_value></element>
+
