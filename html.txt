@@ -102,7 +102,7 @@ width and height- attributes define the size of the image that shows up in the b
 Used for adding links to other pages, sections, or websites to your page.
 we can wrap other elements inside of them
 example: 
-To add a link to an image
+1. To add a link to an image
   <a href="http://example.com/">
   	<img src="https://via.placeholder.com/800x600.png" alt="Alternative Text" />
 </a>
